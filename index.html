@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-specificity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.title h1{
+    color:blue;
+}
+
+
+#box.box{
+    width:300px;
+    height:300px;
+    background-color: blueviolet;
+    margin:0 auto;
+}
+
+#box.box {
+    color:red;
+}
+</style>
+
+
+<body>
+<div class="title">
+<h1>タイトル</h1>
+</div>
+<div id="parent">
+<h2>Here is a title!</h2>
+</div>
+
+
+<div id="box" class="box">
+　　<span>ボックス</span>
+</div>
+
+</body>
+</html>
